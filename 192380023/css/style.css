@@ -1,0 +1,35 @@
+html,body,header,#intro{
+    height:100%;
+}
+header{
+    background:url(../images/main.jpg)no-repeat;
+    background-size: cover;
+}
+#intro{
+    font-family: poopins;
+}
+a {
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 0.17em;
+    
+    display: inline-block;
+    padding: 14px 22px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: blue;
+    transition: width 0.4s ease 0s, left 0.5s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
